@@ -1,5 +1,5 @@
 // Solutions to coding challenges
-const str = "i love tiana";
+const str = "i love somto";
 
 function capitalizeFirstLetter(str){
     // first, we split
