@@ -1,5 +1,4 @@
-// Ebuka's Solution 
-
+// WSolution 1
 let testString = ["X:-1", "Y:1", "X:7", "B:2", "X:5", "Y:8", "A:5"]
 
 function groupTotals(strArr){
@@ -25,7 +24,7 @@ function groupTotals(strArr){
 console.log(groupTotals(testString));
 
 
-// Tosin's Solution
+// Solution 1
 function GroupTotal(strApp){
     hash = {};
 
