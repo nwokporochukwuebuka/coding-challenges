@@ -1,6 +1,6 @@
 // Ebuka's Solution 
 
-let testString = ["X:-1", "Y:1", "X:7", "B:2", "X:5"]
+let testString = ["X:-1", "Y:1", "X:7", "B:2", "X:5", "Y:8", "A:5"]
 
 function groupTotals(strArr){
     let answers = {};
@@ -13,10 +13,16 @@ function groupTotals(strArr){
         }
     }
 
+    answers = Object.keys(answers).sort().reduce((accumulator, key) => {
+        accumulator[key] = answers[key];
+    
+        return accumulator;
+      }, {});;
+
     return JSON.stringify(answers).replace(/["]/g, '').replace(/[{}]/g, '')
 }
 
-// console.log(groupTotals(testString));
+console.log(groupTotals(testString));
 
 
 // Tosin's Solution
@@ -51,4 +57,4 @@ function GroupTotal(strApp){
     return ans;
 }
 
-console.log(GroupTotal(testString));
+// console.log(GroupTotal(testString));
